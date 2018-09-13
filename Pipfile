@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pymysql = "*"
+musicbrainzngs = "*"
+"neo4j-driver" = "*"
+"psycopg2" = "*"
+requests = "*"
+scikit-learn = "*"
+scipy = "*"
+numpy = "*"
+"neo4j" = "*"
+
+[dev-packages]
+"autopep8" = "*"
+pylint = "*"
+pip = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+tag = "python scripts/tag_artists.py"
+adj = "python scripts/adj.py"
+cosine = "python scripts/cosine.py"
+embed = "python scripts/embed.py"
+compress = "python scripts/compress.py"
